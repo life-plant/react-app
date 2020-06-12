@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React, {Suspense} from 'react';
+import {Route} from 'react-router-dom'
+import routerConfig from 'src/common/router-config'
+import Header from 'src/components/header'
+
+function RouteList() {
+    const listItems = routerConfig.map((item) =>
+        <Route key={item.path} path={item.path} exact component={item.component}/>
+    );
+    return (
+        <Suspense fallback={<div>Loading...</div>}>
+            {listItems}
+        </Suspense>
+    );
+}
+class App extends React.Component {
+    render() {
+        return ( 
+            <div className = "app">
+                <Header loca={this.props.location}></Header>
+                <RouteList/>
+            </div>
+        );
+    }
 }
 
 export default App;

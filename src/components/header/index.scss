@@ -1,0 +1,21 @@
+
+.header {
+    background: #20232a;
+    color: #fff;
+    font-size: 28px;
+    .title {
+        text-align: center;
+    }
+}
+.nav {
+    padding: 10px 0;
+}
+.nav-item {
+    padding: 0 10px;
+    color: #fff;
+    text-decoration: none;
+
+    &.nav-active {
+        color: #61dafb;
+    }
+}
