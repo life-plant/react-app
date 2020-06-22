@@ -28,11 +28,10 @@ class Index extends React.Component {
             <div className = "index" >
                 index 
                 <div onClick={this.openHandle}>按钮</div>
-                <Attention isOpen={this.state.isOpen}>
+                <Attention isOpen={this.state.isOpen} closeHandle={this.closeHandle}>
                     <div className="attention-inside-content">
                         <div className="title">title</div>
                         <div className="msg">如果你自己配置 Webpack，你可能要阅读下 Webpack 关于代码分割的指南。你的 Webpack 配置应该类似于此。</div>
-                        <div className="attention-btn" onClick={this.closeHandle}>确定</div>
                     </div>
                 </Attention>
             </div>

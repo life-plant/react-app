@@ -7,6 +7,7 @@ class Attention extends React.Component {
             <div className="attention-mask">
                 <div className="attention-content">
                     {this.props.children}
+                    <div className="attention-btn" onClick={this.props.closeHandle}>确定</div>
                 </div>
             </div>
         ) : null;
