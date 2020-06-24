@@ -1,6 +1,6 @@
 import React from 'react';
-import ErrorBoundary from "src/components/error-boundary";
-import Component1 from "src/components/error-boundary/component1";
+import ErrorBoundary from "./components/boundary";
+import Component1 from "./components/error-component";
 
 class errorBoundary extends React.Component {
     render() {

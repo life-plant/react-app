@@ -1,5 +1,5 @@
 import React from 'react';
-import Theme2 from 'src/components/theme/theme2';
+import Theme2 from './theme2';
 
 class Theme1 extends React.Component {
     render() {

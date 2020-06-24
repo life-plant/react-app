@@ -1,5 +1,5 @@
 import React from 'react';
-import {ThemeContext} from 'src/pages/theme/theme-context';
+import {ThemeContext} from './theme-context';
 
 class Theme2 extends React.Component {
     render() {

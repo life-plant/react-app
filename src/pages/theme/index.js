@@ -1,7 +1,7 @@
 
 import React from 'react';
-import {ThemeContext, themes} from 'src/pages/theme/theme-context';
-import Theme1 from 'src/components/theme/theme1';
+import {ThemeContext, themes} from './components/theme-context';
+import Theme1 from './components/theme1';
 
 
 
