@@ -8,6 +8,7 @@ const Detail = lazy(() => import('src/pages/detail'));
 const List = lazy(() => import('src/pages/list'));
 const Theme = lazy(() => import('src/pages/theme'));
 const errorBoundary = lazy(() => import('src/pages/error-boundary'));
+const refCom = lazy(() => import('src/pages/ref-com'));
 
 
 const routerConfig = [
@@ -33,6 +34,12 @@ const routerConfig = [
     path: '/error-boundary',
     navName: '错误边界',
     component: errorBoundary,
+    showInNav: true,
+  },
+  {
+    path: '/ref-com',
+    navName: 'ref使用',
+    component: refCom,
     showInNav: true,
   },
   {

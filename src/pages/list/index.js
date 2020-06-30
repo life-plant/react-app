@@ -10,9 +10,6 @@ class Index extends React.Component {
             </div>
         );
     }
-    componentDidMount() {
-        console.log(this);
-    }
 }
 
 export default Index;
