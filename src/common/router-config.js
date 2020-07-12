@@ -6,10 +6,10 @@ import { lazy } from 'react';
 const Index = lazy(() => import('src/pages/index'));
 const Detail = lazy(() => import('src/pages/detail'));
 const List = lazy(() => import('src/pages/list'));
-const Theme = lazy(() => import('src/pages/theme'));
+const Context = lazy(() => import('src/pages/context'));
 const errorBoundary = lazy(() => import('src/pages/error-boundary'));
 const refCom = lazy(() => import('src/pages/ref-com'));
-
+const HOC = lazy(() => import('src/pages/hoc'));
 
 const routerConfig = [
   {
@@ -25,9 +25,9 @@ const routerConfig = [
     showInNav: true,
   },
   {
-    path: '/theme',
-    navName: '主题',
-    component: Theme,
+    path: '/context',
+    navName: '上下文',
+    component: Context,
     showInNav: true,
   },
   {
@@ -40,6 +40,12 @@ const routerConfig = [
     path: '/ref-com',
     navName: 'ref使用',
     component: refCom,
+    showInNav: true,
+  },
+  {
+    path: '/hoc',
+    navName: '高阶组件',
+    component: HOC,
     showInNav: true,
   },
   {
