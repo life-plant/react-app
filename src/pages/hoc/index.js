@@ -10,8 +10,8 @@ class HocPage extends React.Component {
         let List2 = hocMaker(HOCContent, getList2);
         return (
             <div>
-                <List1></List1>
-                <List2></List2>
+                <List1 title="list1"></List1>
+                <List2 title="list2"></List2>
             </div>
         )
     }

@@ -17,9 +17,10 @@ function RouteList() {
 class App extends React.Component {
     render() {
         return ( 
-            <div className = "app">
+            <div className = "app" id="app-root">
                 <Header loca={this.props.location}></Header>
                 <RouteList/>
+                <div id="modal-root"></div>
             </div>
         );
     }

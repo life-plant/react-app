@@ -5,11 +5,12 @@
 import { lazy } from 'react';
 const Index = lazy(() => import('src/pages/index'));
 const Detail = lazy(() => import('src/pages/detail'));
-const List = lazy(() => import('src/pages/list'));
+const Complex = lazy(() => import('src/pages/complex'));
 const Context = lazy(() => import('src/pages/context'));
 const errorBoundary = lazy(() => import('src/pages/error-boundary'));
 const refCom = lazy(() => import('src/pages/ref-com'));
 const HOC = lazy(() => import('src/pages/hoc'));
+const Portal = lazy(() => import('src/pages/portal'));
 
 const routerConfig = [
   {
@@ -19,9 +20,9 @@ const routerConfig = [
     showInNav: true,
   },
   {
-    path: '/list',
-    navName: '列表',
-    component: List,
+    path: '/complex',
+    navName: '综合',
+    component: Complex,
     showInNav: true,
   },
   {
@@ -46,6 +47,12 @@ const routerConfig = [
     path: '/hoc',
     navName: '高阶组件',
     component: HOC,
+    showInNav: true,
+  },
+  {
+    path: '/portal',
+    navName: 'portal',
+    component: Portal,
     showInNav: true,
   },
   {
