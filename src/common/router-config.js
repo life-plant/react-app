@@ -6,10 +6,12 @@ import { lazy } from 'react';
 const Index = lazy(() => import('src/pages/index'));
 const Detail = lazy(() => import('src/pages/detail'));
 const setState = lazy(() => import('src/pages/set-state'));
-const Theme = lazy(() => import('src/pages/theme'));
+const Complex = lazy(() => import('src/pages/complex'));
+const Context = lazy(() => import('src/pages/context'));
 const errorBoundary = lazy(() => import('src/pages/error-boundary'));
 const refCom = lazy(() => import('src/pages/ref-com'));
-
+const HOC = lazy(() => import('src/pages/hoc'));
+const Portal = lazy(() => import('src/pages/portal'));
 
 const routerConfig = [
   {
@@ -22,12 +24,17 @@ const routerConfig = [
     path: '/set-state',
     navName: '设置复杂数据',
     component: setState,
+  },
+  {
+    path: '/complex',
+    navName: '综合',
+    component: Complex,
     showInNav: true,
   },
   {
-    path: '/theme',
-    navName: '主题',
-    component: Theme,
+    path: '/context',
+    navName: '上下文',
+    component: Context,
     showInNav: true,
   },
   {
@@ -40,6 +47,18 @@ const routerConfig = [
     path: '/ref-com',
     navName: 'ref使用',
     component: refCom,
+    showInNav: true,
+  },
+  {
+    path: '/hoc',
+    navName: '高阶组件',
+    component: HOC,
+    showInNav: true,
+  },
+  {
+    path: '/portal',
+    navName: 'portal',
+    component: Portal,
     showInNav: true,
   },
   {
