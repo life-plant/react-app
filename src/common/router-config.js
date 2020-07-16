@@ -41,7 +41,6 @@ const routerConfig = [
     path: '/error-boundary',
     navName: '错误边界',
     component: errorBoundary,
-    showInNav: true,
   },
   {
     path: '/ref-com',
