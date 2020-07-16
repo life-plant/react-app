@@ -2,25 +2,27 @@
 import React from 'react';
 import {ThemeContext, themes} from './components/theme-context';
 import Theme1 from './components/theme1';
+import './index.scss';
 
 
 
 class themePage extends React.Component {
     constructor(props) {
         super(props);
-        this.toggleTheme = () => {
-            this.setState(state => ({
-              theme:
-                state.theme === themes.dark
-                  ? themes.light
-                  : themes.dark,
-            }));
-        };
+        this.toggleTheme = this.toggleTheme.bind(this);
         this.state = {
             theme: themes.dark,
             toggleTheme: this.toggleTheme,
         }
     }
+    toggleTheme() {
+        this.setState(state => ({
+          theme:
+            state.theme === themes.dark
+              ? themes.light
+              : themes.dark,
+        }));
+    };
     render() {
         return (
             <ThemeContext.Provider

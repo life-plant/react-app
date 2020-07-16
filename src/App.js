@@ -19,7 +19,7 @@ class App extends React.Component {
         return ( 
             <div className = "app" id="app-root">
                 <Header loca={this.props.location}></Header>
-                <div className = "main">
+                <div className = "<RouteList/>">
                     <RouteList/>
                 </div>
                 <div id="modal-root"></div>

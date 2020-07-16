@@ -8,8 +8,11 @@ class Theme2 extends React.Component {
         console.log(theme);
         return (
             <div className="theme2">
+                ------------theme2组件start----------
                 <div style={{backgroundColor: theme.background, color: theme.foreground }}>主题颜色</div>
-                <div onClick={toggleTheme}>切换主题颜色</div>
+                <div className="btn" onClick={toggleTheme}>切换主题颜色</div>
+                <br></br>
+                ------------theme2组件end-------------
             </div>
         )
     }

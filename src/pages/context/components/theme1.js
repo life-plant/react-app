@@ -5,8 +5,9 @@ class Theme1 extends React.Component {
     render() {
         return (
             <div>
-                111
+                theme1组件start
                 <Theme2></Theme2>
+                theme1组件end
             </div>
         )
     }
