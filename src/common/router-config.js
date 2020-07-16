@@ -5,7 +5,7 @@
 import { lazy } from 'react';
 const Index = lazy(() => import('src/pages/index'));
 const Detail = lazy(() => import('src/pages/detail'));
-const List = lazy(() => import('src/pages/list'));
+const setState = lazy(() => import('src/pages/set-state'));
 const Theme = lazy(() => import('src/pages/theme'));
 const errorBoundary = lazy(() => import('src/pages/error-boundary'));
 const refCom = lazy(() => import('src/pages/ref-com'));
@@ -19,9 +19,9 @@ const routerConfig = [
     showInNav: true,
   },
   {
-    path: '/list',
-    navName: '列表',
-    component: List,
+    path: '/set-state',
+    navName: '设置复杂数据',
+    component: setState,
     showInNav: true,
   },
   {
